@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googleマップ集客・MEO対策サービス - オンライン評判管理スターターパック</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-orange {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .gradient-blue {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        .shadow-custom {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(238, 90, 36, 0.3);
+        }
+        .section-padding {
+            padding: 4rem 0;
+        }
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 3rem 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- セクション1: ヒーローセクション -->
+    <section class="gradient-bg text-white section-padding">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    Googleマップ、<br>放置していませんか？
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90 leading-relaxed max-w-4xl mx-auto">
+                    月々2,980円から始める、オンライン評判・集客スターターパック。<br>
+                    プロによるMEO対策の土台作りと、口コミ管理の自動化で、<br class="hidden md:block">
+                    あなたのビジネスを次のステージへ。
+                </p>
+                
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-6 md:p-8 mb-10 max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+                        <div class="flex items-center text-left">
+                            <i class="fas fa-check-circle text-green-300 text-xl mr-3"></i>
+                            <span class="text-sm md:text-base">飲食店・整体院・サロン・各種教室など、多くのスモールビジネスで導入可能</span>
+                        </div>
+                        <div class="flex items-center text-left">
+                            <i class="fas fa-check-circle text-green-300 text-xl mr-3"></i>
+                            <span class="text-sm md:text-base">専門業者に頼むより圧倒的な低コスト</span>
+                        </div>
+                        <div class="flex items-center text-left">
+                            <i class="fas fa-check-circle text-green-300 text-xl mr-3"></i>
+                            <span class="text-sm md:text-base">いつでも解約OK</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn-primary text-white font-bold py-4 px-8 md:px-12 rounded-full text-lg md:text-xl shadow-lg inline-flex items-center">
+                    <i class="fas fa-comments mr-3"></i>
+                    今すぐ無料で相談してみる
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション2: お悩み・共感パート -->
+    <section class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    オーナー様、こんなお悩みはありませんか？
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-square text-red-400 mt-1 mr-3"></i>
+                        <span class="text-gray-700">ネット対策の重要性は分かるが、後回しになっている</span>
+                    </div>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-square text-red-400 mt-1 mr-3"></i>
+                        <span class="text-gray-700">競合はネットでよく見るのに、うちは情報が古いまま…</span>
+                    </div>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-square text-red-400 mt-1 mr-3"></i>
+                        <span class="text-gray-700">良い口コミが売上に繋がるのは分かるが、お願いするのは気が引ける</span>
+                    </div>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg">
+                    <div class="flex items-start">
+                        <i class="fas fa-square text-red-400 mt-1 mr-3"></i>
+                        <span class="text-gray-700">口コミへの返信が面倒で、つい定型文になったり、返せなかったりする</span>
+                    </div>
+                </div>
+                <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-lg md:col-span-2 lg:col-span-1">
+                    <div class="flex items-start">
+                        <i class="fas fa-square text-red-400 mt-1 mr-3"></i>
+                        <span class="text-gray-700">専門業者に頼むと高額な費用を請求されそうで不安</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <p class="text-xl font-semibold text-gray-700 bg-yellow-100 inline-block px-8 py-4 rounded-full">
+                    もし一つでも当てはまったら、このサービスはあなたのためのものです。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション3: 解決策とベネフィット -->
+    <section class="section-padding bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight">
+                    そのお悩み、Googleマップ集客のプロが<br>
+                    <span class="text-blue-600">「MEOの土台作り」と「評判管理の自動化」</span>で、<br>
+                    すべて解決します！
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-2xl p-6 shadow-custom text-center">
+                    <div class="gradient-blue w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search-plus text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">集客力の向上</h3>
+                    <p class="text-gray-600">未来のお客様があなたのお店を見つけやすくなる！</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-custom text-center">
+                    <div class="gradient-orange w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">売上への貢献</h3>
+                    <p class="text-gray-600">ライバル店より「選ばれる理由」ができ、来店確率がアップ！</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-custom text-center">
+                    <div class="bg-gradient-to-r from-green-400 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">信頼性の獲得</h3>
+                    <p class="text-gray-600">「お客様の声」を大切にする姿勢が伝わり、お店のファンが増える！</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-custom text-center">
+                    <div class="bg-gradient-to-r from-purple-400 to-pink-400 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">業務効率化</h3>
+                    <p class="text-gray-600">口コミ対応のストレスと時間から解放され、本業に集中できる！</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 shadow-custom text-center md:col-span-2 lg:col-span-1">
+                    <div class="bg-gradient-to-r from-yellow-400 to-orange-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-yen-sign text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-800">コスト削減</h3>
+                    <p class="text-gray-600">広告費をかけずに、24時間365日働く営業マンを雇うようなもの！</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg transition-all duration-300">
+                    <i class="fas fa-info-circle mr-3"></i>
+                    サービスの詳細を見てみる
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション4: サービスの詳細 -->
+    <section class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    ご提供するサービスは、とてもシンプルです
+                </h2>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- パート1 -->
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-8 shadow-custom">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-cogs text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-blue-800">MEOの土台作り</h3>
+                            <p class="text-blue-600 font-medium">Googleビジネスプロフィール プロによる初期設定</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed mb-6">
+                        Googleマップで「発見」され、「選ばれる」ための基盤をプロが完全に構築。オーナー様は丸投げでOK！業種や強みに合わせた最適な設定を行います。
+                    </p>
+                    <div class="bg-white rounded-lg p-4">
+                        <h4 class="font-bold text-gray-800 mb-3">設定項目チェックリスト</h4>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>基本情報の最適化</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>カテゴリ設定</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>写真の最適化</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>営業時間設定</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>投稿機能活用</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Q&A設定</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- パート2 -->
+                <div class="bg-gradient-to-br from-orange-50 to-red-100 rounded-2xl p-8 shadow-custom">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <i class="fas fa-rocket text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-red-800">MEOの加速装置</h3>
+                            <p class="text-red-600 font-medium">専用アプリ2種で日々の評判管理を自動化</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-star text-yellow-500 text-xl mr-3"></i>
+                                <h4 class="text-lg font-bold text-gray-800">レビュー促進アプリ</h4>
+                            </div>
+                            <p class="text-gray-600">お客様に気軽にレビューをお願いできる！</p>
+                        </div>
+
+                        <div class="bg-white rounded-lg p-6">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-robot text-blue-500 text-xl mr-3"></i>
+                                <h4 class="text-lg font-bold text-gray-800">AI返信アプリ</h4>
+                            </div>
+                            <p class="text-gray-600">たった30秒でお店のトーンに合った返信文が完成！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション5: 料金プラン -->
+    <section class="section-padding bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    圧倒的なコストパフォーマンス。明確な料金プラン
+                </h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- 初期費用 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-custom text-center">
+                        <div class="bg-blue-600 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-tools text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">初期費用</h3>
+                        <div class="text-4xl font-bold text-blue-600 mb-4">
+                            30,000円
+                            <span class="text-lg text-gray-500 font-normal">（税別）</span>
+                        </div>
+                        <p class="text-gray-600 font-medium">
+                            Googleビジネスプロフィール<br>
+                            完全初期設定サポート
+                        </p>
+                    </div>
+
+                    <!-- 月額費用 -->
+                    <div class="bg-white rounded-2xl p-8 shadow-custom text-center border-4 border-red-400">
+                        <div class="bg-red-500 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-mobile-alt text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">月額費用</h3>
+                        <div class="text-4xl font-bold text-red-500 mb-4">
+                            2,980円
+                            <span class="text-lg text-gray-500 font-normal">（税別）</span>
+                        </div>
+                        <p class="text-gray-600 font-medium">
+                            専用アプリ2種の<br>
+                            システム利用料
+                        </p>
+                        <div class="mt-4">
+                            <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold">
+                                おすすめ！
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg mb-8">
+                    <p class="text-gray-700 leading-relaxed">
+                        <i class="fas fa-lightbulb text-yellow-500 mr-2"></i>
+                        高額なコンサル契約は不要です。初期投資で集客の土台を整え、月々は缶コーヒー数本分ほどの投資で、お店の評判を育て続けます。
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <button class="btn-primary text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg">
+                        <i class="fas fa-credit-card mr-3"></i>
+                        このプランで申し込む（無料相談へ）
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション6: 導入の流れ -->
+    <section class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    お申し込みは簡単4ステップ！<br>
+                    すべてオンラインで完結します。
+                </h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- 線 -->
+                    <div class="absolute left-8 top-16 bottom-0 w-0.5 bg-gray-300 hidden md:block"></div>
+                    
+                    <div class="space-y-8">
+                        <!-- STEP 1 -->
+                        <div class="flex items-start">
+                            <div class="gradient-blue w-16 h-16 rounded-full flex items-center justify-center mr-6 flex-shrink-0 z-10 relative">
+                                <span class="text-white font-bold text-xl">1</span>
+                            </div>
+                            <div class="bg-blue-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold text-blue-800 mb-2">無料相談・ヒアリング</h3>
+                                <p class="text-gray-600">（約30分）</p>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2 -->
+                        <div class="flex items-start">
+                            <div class="gradient-orange w-16 h-16 rounded-full flex items-center justify-center mr-6 flex-shrink-0 z-10 relative">
+                                <span class="text-white font-bold text-xl">2</span>
+                            </div>
+                            <div class="bg-orange-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold text-orange-800 mb-2">ご契約・お支払い</h3>
+                                <p class="text-gray-600">安心のオンライン決済システム</p>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3 -->
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-green-400 to-blue-500 w-16 h-16 rounded-full flex items-center justify-center mr-6 flex-shrink-0 z-10 relative">
+                                <span class="text-white font-bold text-xl">3</span>
+                            </div>
+                            <div class="bg-green-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold text-green-800 mb-2">GBP設定作業</h3>
+                                <p class="text-gray-600">丸投げOK！プロが完全サポート</p>
+                            </div>
+                        </div>
+
+                        <!-- STEP 4 -->
+                        <div class="flex items-start">
+                            <div class="bg-gradient-to-r from-purple-400 to-pink-400 w-16 h-16 rounded-full flex items-center justify-center mr-6 flex-shrink-0 z-10 relative">
+                                <span class="text-white font-bold text-xl">4</span>
+                            </div>
+                            <div class="bg-purple-50 rounded-lg p-6 flex-1">
+                                <h3 class="text-xl font-bold text-purple-800 mb-2">ご確認・運用スタート！</h3>
+                                <p class="text-gray-600">設定完了をご確認後、すぐに効果を実感</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション7: よくある質問 -->
+    <section class="section-padding bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    よくある質問（FAQ）
+                </h2>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-custom p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                        最低契約期間はありますか？
+                    </h3>
+                    <p class="text-gray-600 pl-10">
+                        いいえ、ございません。月額プランはいつでもご解約いただけます。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-custom p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                        パソコンが苦手なのですが、大丈夫ですか？
+                    </h3>
+                    <p class="text-gray-600 pl-10">
+                        はい、大丈夫です。アプリは直感的に使えるシンプルな設計です。ご不明な点はサポートいたします。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-custom p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                        必ずGoogleマップで上位表示されますか？
+                    </h3>
+                    <p class="text-gray-600 pl-10">
+                        Googleのアルゴリズムや競合状況によるため、順位を保証することはできません。しかし、常に最新のMEOベストプラクティスに基づき、表示機会を最大化する設定を行うことをお約束します。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-custom p-6">
+                    <h3 class="font-bold text-lg text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-question-circle text-blue-500 mr-3"></i>
+                        何を準備すれば良いですか？
+                    </h3>
+                    <p class="text-gray-600 pl-10">
+                        お店の基本情報と、掲載したい写真（数枚）をご準備いただくだけで結構です。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- セクション8: 最後のCTA -->
+    <section class="section-padding gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    ライバル店が対策を始める前に、一歩先へ。
+                </h2>
+                <p class="text-xl opacity-90 leading-relaxed max-w-4xl mx-auto mb-12">
+                    MEO対策は、早く始めた人が圧倒的に有利です。集客の悩み、評判管理のストレスから解放され、オーナー様が本当に集中したい業務に時間を使えるよう、私達が全力でサポートします。
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-2xl p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">お問い合わせフォーム</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">お名前 *</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-gray-800 bg-white bg-opacity-90" placeholder="山田太郎" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">メールアドレス *</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg text-gray-800 bg-white bg-opacity-90" placeholder="example@example.com" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">店舗名・院名など *</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg text-gray-800 bg-white bg-opacity-90" placeholder="○○カフェ" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">ご相談内容</label>
+                        <textarea rows="4" class="w-full px-4 py-3 rounded-lg text-gray-800 bg-white bg-opacity-90" placeholder="ご質問やご要望がございましたら、お聞かせください。"></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn-primary text-white font-bold py-4 px-8 rounded-full text-xl shadow-lg">
+                        <i class="fas fa-paper-plane mr-3"></i>
+                        まずは無料で、専門家に相談してみる
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-300">
+                © 2024 MEO集客サポート. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"96179c8d5959d75e","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.7.0","token":"4edd5f8ec12a48cfa682ab8261b80a79"}' crossorigin="anonymous"></script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDuXdijWkeezwUuEsEiYAGzX70sOLqAzJAiR250VNyaRd3IfPYannNy7NOtIRw%2BxLtaERX2oDnLZ0dJADtlM6jEaDs%2F68JrVGO%2ByEGyjr%2B7%2BYpk5I7pf4aDad3r8%2BZGHtNa6Nvtvaz%2BiqyUe7ekmBhE4H3e%2BdNp7E6XOTRpWHx8dTrW%2FF%2BlRcefGym7cHdV0uHHJ1jjcfUvT77ho2nrRz8OKBhILlhOSz3g5pQG0%2FtZ686Vu%2B3JWFWihNWiX6rAhwxdEHR6S97mWgDCvA%2BWioRycA5BMBrbdRWDNufeufZgWbd7If6imTuZi5jnhk36cl9r07ahe8XOo48PljSuAwZxZb0BVQ%2FO%2FxRyDknFxJAjy6I6bA4iAeu4cZC3XfCgMxlh1ZjSJzwPn9KT6829y%2F5IUP2M4R6glvi1SjIsWN5kEpNvtuveRnlTRMpA0GNZAsj%2BYF8fCIVx3B09agE4Jsvw68imZftktl7MyA5rTvB0XXmUZc5tUEVGxTix2YzW5Qkx1Ipkoz5b5I7ywP32R8Ppw%3D";
+        window.__genspark_locale = "ja-JP";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDuXdijWkeezwUuEsEiYAGzX70sOLqAzJAiR250VNyaRd3IfPYannNy7NOtIRw+xLtaERX2oDnLZ0dJADtlM6jEaDs/68JrVGO+yEGyjr+7+Ypk5I7pf4aDad3r8+ZGHtNa6Nvtvaz+iqyUe7ekmBhE4H3e+dNp7E6XOTRpWHx8dTrW/F+lRcefGym7cHdV0uHHJ1jjcfUvT77ho2nrRz8OKBhILlhOSz3g5pQG0/tZ686Vu+3JWFWihNWiX6rAhwxdEHR6S97mWgDCvA+WioRycA5BMBrbdRWDNufeufZgWbd7If6imTuZi5jnhk36cl9r07ahe8XOo48PljSuAwZxZb0BVQ/O/xRyDknFxJAjy6I6bA4iAeu4cZC3XfCgMxlh1ZjSJzwPn9KT6829y/5IUP2M4R6glvi1SjIsWN5kEpNvtuveRnlTRMpA0GNZAsj+YF8fCIVx3B09agE4Jsvw68imZftktl7MyA5rTvB0XXmUZc5tUEVGxTix2YzW5Qkx1Ipkoz5b5I7ywP32R8Ppw=";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
